@@ -24,4 +24,4 @@ export const counterReduxReducer = (state = initialValue, action) => {
     }
 }
 
-export const selectCounterRedux = (state) => state.counterImmer;
+export const selectCounterRedux = (state) => state.counterRedux;

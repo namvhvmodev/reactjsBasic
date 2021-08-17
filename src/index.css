@@ -7,7 +7,89 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  --primary-color: #67b1c6;
+}
+
+.header-text {
+  color: var(--primary-color);
+  margin-top: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-top: 6px;
+  font-size: 18px;
+  transition: margin-left 0.4s ease;
+}
+
+a:hover {
+  margin-left: 10px;
+}
+
+.header a.active {
+  font-weight: bold;
+  color: purple;
+}
+
+.header {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  column-gap: 34px;
+}
+
+.grid {
+  width: 100%;
+  display: block;
+  padding: 0;
+}
+
+.wide {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.counter {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.value {
+  color: var(--primary-color);
+  font-size: 60px;
+}
+
+.btn {
+  margin: 10px;
+  cursor: pointer;
+  color: var(--primary-color);
+  padding: 4px 40px;
+  border: 1px solid var(--primary-color);
+  background: #fff;
+  font-size: 30px;
+  border-radius: 100px;
+  transition: 0.4s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
 }

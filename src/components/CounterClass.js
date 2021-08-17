@@ -21,7 +21,7 @@ export class CounterClass extends React.Component {
     render() {
         return (
             <section>
-                <div class="counter">
+                <div className="counter">
                     <h3 className='value'>{this.state.value}</h3>
                     <button className='btn' onClick={this.increment}>+</button>
                     <button className='btn' onClick={this.decrement}>-</button>

@@ -16,7 +16,7 @@ export const CounterRedux = () => {
 
     return (
         <section>
-            <div class="counter">
+            <div className="counter">
                 <h3 className='value'>{value}</h3>
                 <button className='btn' onClick={onIncrement}>+</button>
                 <button className='btn' onClick={onDecrement}>-</button>

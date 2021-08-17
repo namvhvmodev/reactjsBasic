@@ -12,7 +12,7 @@ export const CounterFunction = () => {
 
     return (
         <section>
-            <div class="counter">
+            <div className="counter">
                 <h3 className='value'>{value}</h3>
                 <button className='btn' onClick={increment}>+</button>
                 <button className='btn' onClick={decrement}>-</button>
